@@ -1,0 +1,11 @@
+{
+  "module": {
+    "name": "mainlist",
+    "type": "har",
+    "deviceTypes": [
+      "wearable"
+    ],
+    "routerMap": "$profile:router_map"
+
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "entry",
+  "version": "1.0.0",
+  "description": "Please describe the basic information.",
+  "main": "",
+  "author": "",
+  "license": "",
+  "dependencies": {
+    "commons": "file:../utils/commons",
+    "player": "file:../features/player",
+    "splash": "file:../features/splash",
+    "mainlist": "file:../features/mainlist",
+    "landing": "file:../features/landing",
+    "settings": "file:../features/settings",
+    "search": "file:../features/search",
+    "genres": "file:../features/genres",
+    "downloads": "file:../features/downloads",
+    "favorites": "file:../features/favorites"
+
+  }
+}
+

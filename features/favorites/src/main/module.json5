@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "favorites",
+    "type": "har",
+    "deviceTypes": [
+      "wearable"
+    ]
+  }
+}

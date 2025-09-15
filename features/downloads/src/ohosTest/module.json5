@@ -1,0 +1,11 @@
+{
+  "module": {
+    "name": "downloads_test",
+    "type": "feature",
+    "deviceTypes": [
+      "wearable"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false
+  }
+}

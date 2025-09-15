@@ -1,0 +1,10 @@
+{
+  "name": "splash",
+  "version": "1.0.0",
+  "description": "Please describe the basic information.",
+  "main": "Index.ets",
+  "author": "",
+  "dependencies": {
+    "commons": "file:../../utils/commons"
+  }
+}

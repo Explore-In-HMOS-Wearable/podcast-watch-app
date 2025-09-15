@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "downloads",
+    "type": "har",
+    "deviceTypes": [
+      "wearable"
+    ]
+  }
+}

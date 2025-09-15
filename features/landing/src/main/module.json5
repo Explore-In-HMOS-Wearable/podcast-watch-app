@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "landing",
+    "type": "har",
+    "deviceTypes": [
+      "wearable"
+    ]
+  }
+}

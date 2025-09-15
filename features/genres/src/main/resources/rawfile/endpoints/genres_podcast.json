@@ -1,0 +1,746 @@
+[
+  {
+    "id": 1,
+    "name": "Arts",
+    "subCategories": [
+      {
+        "id": 1,
+        "listenCount": 7215,
+        "mainCategoryId": 1,
+        "subCategoryName": "Design",
+        "url": "/podcasts/design/"
+      },
+      {
+        "id": 2,
+        "listenCount": 1449,
+        "mainCategoryId": 1,
+        "subCategoryName": "Fashion & Beauty",
+        "url": "/podcasts/fashion-beauty/"
+      },
+      {
+        "id": 3,
+        "listenCount": 8559,
+        "mainCategoryId": 1,
+        "subCategoryName": "Food",
+        "url": "/podcasts/food/"
+      },
+      {
+        "id": 4,
+        "listenCount": 908,
+        "mainCategoryId": 1,
+        "subCategoryName": "Literature",
+        "url": "/podcasts/literature/"
+      },
+      {
+        "id": 5,
+        "listenCount": 2709,
+        "mainCategoryId": 1,
+        "subCategoryName": "Performing Arts",
+        "url": "/podcasts/performing-arts/"
+      },
+      {
+        "id": 6,
+        "listenCount": 8217,
+        "mainCategoryId": 1,
+        "subCategoryName": "Visual Arts",
+        "url": "/podcasts/visual-arts/"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Business",
+    "subCategories": [
+      {
+        "id": 7,
+        "listenCount": 1207,
+        "mainCategoryId": 2,
+        "subCategoryName": "Careers",
+        "url": "/podcasts/careers/"
+      },
+      {
+        "id": 8,
+        "listenCount": 6762,
+        "mainCategoryId": 2,
+        "subCategoryName": "Capital",
+        "url": "/podcasts/entrepreneurship/"
+      },
+      {
+        "id": 9,
+        "listenCount": 6325,
+        "mainCategoryId": 2,
+        "subCategoryName": "Investing",
+        "url": "/podcasts/investing/"
+      },
+      {
+        "id": 10,
+        "listenCount": 6560,
+        "mainCategoryId": 2,
+        "subCategoryName": "Management",
+        "url": "/podcasts/management/"
+      },
+      {
+        "id": 11,
+        "listenCount": 9849,
+        "mainCategoryId": 2,
+        "subCategoryName": "Marketing",
+        "url": "/podcasts/marketing/"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Comedy",
+    "subCategories": [
+      {
+        "id": 12,
+        "listenCount": 4716,
+        "mainCategoryId": 3,
+        "subCategoryName": "Improv",
+        "url": "/podcasts/improv/"
+      },
+      {
+        "id": 13,
+        "listenCount": 7960,
+        "mainCategoryId": 3,
+        "subCategoryName": "Stand‑Up",
+        "url": "/podcasts/standup/"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Education",
+    "subCategories": [
+      {
+        "id": 14,
+        "listenCount": 593,
+        "mainCategoryId": 4,
+        "subCategoryName": "Courses",
+        "url": "/podcasts/courses/"
+      },
+      {
+        "id": 15,
+        "listenCount": 5563,
+        "mainCategoryId": 4,
+        "subCategoryName": "How To",
+        "url": "/podcasts/how-to/"
+      },
+      {
+        "id": 16,
+        "listenCount": 9283,
+        "mainCategoryId": 4,
+        "subCategoryName": "Language Learning",
+        "url": "/podcasts/language-learning/"
+      },
+      {
+        "id": 17,
+        "listenCount": 9581,
+        "mainCategoryId": 4,
+        "subCategoryName": "Self‑Improvement",
+        "url": "/podcasts/selfimprovement/"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Fiction",
+    "subCategories": [
+      {
+        "id": 18,
+        "listenCount": 7206,
+        "mainCategoryId": 5,
+        "subCategoryName": "Comedy Fiction",
+        "url": "/podcasts/comedy-fiction/"
+      },
+      {
+        "id": 19,
+        "listenCount": 597,
+        "mainCategoryId": 5,
+        "subCategoryName": "Drama",
+        "url": "/podcasts/drama/"
+      },
+      {
+        "id": 20,
+        "listenCount": 7213,
+        "mainCategoryId": 5,
+        "subCategoryName": "Science Fiction",
+        "url": "/podcasts/science-fiction/"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Government",
+    "subCategories": [
+      {
+        "id": 21,
+        "listenCount": 462,
+        "mainCategoryId": 6,
+        "subCategoryName": "All Podcasts",
+        "url": "/podcasts/all-podcasts/"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "History",
+    "subCategories": [
+      {
+        "id": 22,
+        "listenCount": 5865,
+        "mainCategoryId": 7,
+        "subCategoryName": "All Podcasts",
+        "url": "/podcasts/all-podcasts/"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Health & Fitness",
+    "subCategories": [
+      {
+        "id": 23,
+        "listenCount": 5975,
+        "mainCategoryId": 8,
+        "subCategoryName": "Alternative Health",
+        "url": "/podcasts/alternative-health/"
+      },
+      {
+        "id": 24,
+        "listenCount": 3560,
+        "mainCategoryId": 8,
+        "subCategoryName": "Fitness",
+        "url": "/podcasts/fitness/"
+      },
+      {
+        "id": 25,
+        "listenCount": 554,
+        "mainCategoryId": 8,
+        "subCategoryName": "Medicine",
+        "url": "/podcasts/medicine/"
+      },
+      {
+        "id": 26,
+        "listenCount": 6517,
+        "mainCategoryId": 8,
+        "subCategoryName": "Mental Health",
+        "url": "/podcasts/mental-health/"
+      },
+      {
+        "id": 27,
+        "listenCount": 4792,
+        "mainCategoryId": 8,
+        "subCategoryName": "Nutrition",
+        "url": "/podcasts/nutrition/"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Kids & Family",
+    "subCategories": [
+      {
+        "id": 28,
+        "listenCount": 2165,
+        "mainCategoryId": 9,
+        "subCategoryName": "Education for Kids",
+        "url": "/podcasts/education-for-kids/"
+      },
+      {
+        "id": 29,
+        "listenCount": 6666,
+        "mainCategoryId": 9,
+        "subCategoryName": "Parenting",
+        "url": "/podcasts/parenting/"
+      },
+      {
+        "id": 30,
+        "listenCount": 2859,
+        "mainCategoryId": 9,
+        "subCategoryName": "Pets & Animals",
+        "url": "/podcasts/pets-animals/"
+      },
+      {
+        "id": 31,
+        "listenCount": 3001,
+        "mainCategoryId": 9,
+        "subCategoryName": "Stories for Kids",
+        "url": "/podcasts/stories-for-kids/"
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Leisure",
+    "subCategories": [
+      {
+        "id": 32,
+        "listenCount": 8801,
+        "mainCategoryId": 10,
+        "subCategoryName": "Animation & Manga",
+        "url": "/podcasts/animation-manga/"
+      },
+      {
+        "id": 33,
+        "listenCount": 7921,
+        "mainCategoryId": 10,
+        "subCategoryName": "Aviation",
+        "url": "/podcasts/aviation/"
+      },
+      {
+        "id": 34,
+        "listenCount": 674,
+        "mainCategoryId": 10,
+        "subCategoryName": "Crafts",
+        "url": "/podcasts/crafts/"
+      },
+      {
+        "id": 35,
+        "listenCount": 9282,
+        "mainCategoryId": 10,
+        "subCategoryName": "Games",
+        "url": "/podcasts/games/"
+      },
+      {
+        "id": 36,
+        "listenCount": 8950,
+        "mainCategoryId": 10,
+        "subCategoryName": "Hobbies",
+        "url": "/podcasts/hobbies/"
+      },
+      {
+        "id": 37,
+        "listenCount": 1768,
+        "mainCategoryId": 10,
+        "subCategoryName": "Home & Garden",
+        "url": "/podcasts/home-garden/"
+      },
+      {
+        "id": 38,
+        "listenCount": 5086,
+        "mainCategoryId": 10,
+        "subCategoryName": "Automotive",
+        "url": "/podcasts/automotive/"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Music",
+    "subCategories": [
+      {
+        "id": 39,
+        "listenCount": 6112,
+        "mainCategoryId": 11,
+        "subCategoryName": "Music Commentary",
+        "url": "/podcasts/music-commentary/"
+      },
+      {
+        "id": 40,
+        "listenCount": 3594,
+        "mainCategoryId": 11,
+        "subCategoryName": "Music History",
+        "url": "/podcasts/music-history/"
+      },
+      {
+        "id": 41,
+        "listenCount": 9486,
+        "mainCategoryId": 11,
+        "subCategoryName": "Music Interviews",
+        "url": "/podcasts/music-interviews/"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "News",
+    "subCategories": [
+      {
+        "id": 42,
+        "listenCount": 8748,
+        "mainCategoryId": 12,
+        "subCategoryName": "Business News",
+        "url": "/podcasts/business-news/"
+      },
+      {
+        "id": 43,
+        "listenCount": 8540,
+        "mainCategoryId": 12,
+        "subCategoryName": "Daily News",
+        "url": "/podcasts/daily-news/"
+      },
+      {
+        "id": 44,
+        "listenCount": 3944,
+        "mainCategoryId": 12,
+        "subCategoryName": "Entertainment News",
+        "url": "/podcasts/entertainment-news/"
+      },
+      {
+        "id": 45,
+        "listenCount": 5762,
+        "mainCategoryId": 12,
+        "subCategoryName": "News Commentary",
+        "url": "/podcasts/news-commentary/"
+      },
+      {
+        "id": 46,
+        "listenCount": 6435,
+        "mainCategoryId": 12,
+        "subCategoryName": "Politics",
+        "url": "/podcasts/politics/"
+      },
+      {
+        "id": 47,
+        "listenCount": 9060,
+        "mainCategoryId": 12,
+        "subCategoryName": "Sports News",
+        "url": "/podcasts/sports-news/"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Religion & Spirituality",
+    "subCategories": [
+      {
+        "id": 48,
+        "listenCount": 9154,
+        "mainCategoryId": 13,
+        "subCategoryName": "Buddhism",
+        "url": "/podcasts/buddhism/"
+      },
+      {
+        "id": 49,
+        "listenCount": 8350,
+        "mainCategoryId": 13,
+        "subCategoryName": "Christianity",
+        "url": "/podcasts/christianity/"
+      },
+      {
+        "id": 50,
+        "listenCount": 629,
+        "mainCategoryId": 13,
+        "subCategoryName": "Hinduism",
+        "url": "/podcasts/hinduism/"
+      },
+      {
+        "id": 51,
+        "listenCount": 2004,
+        "mainCategoryId": 13,
+        "subCategoryName": "Islam",
+        "url": "/podcasts/islam/"
+      },
+      {
+        "id": 52,
+        "listenCount": 9891,
+        "mainCategoryId": 13,
+        "subCategoryName": "Judaism",
+        "url": "/podcasts/judaism/"
+      },
+      {
+        "id": 53,
+        "listenCount": 9079,
+        "mainCategoryId": 13,
+        "subCategoryName": "Religion",
+        "url": "/podcasts/religion/"
+      },
+      {
+        "id": 54,
+        "listenCount": 7319,
+        "mainCategoryId": 13,
+        "subCategoryName": "Spirituality",
+        "url": "/podcasts/spirituality/"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Science",
+    "subCategories": [
+      {
+        "id": 55,
+        "listenCount": 1146,
+        "mainCategoryId": 14,
+        "subCategoryName": "Astronomy",
+        "url": "/podcasts/astronomy/"
+      },
+      {
+        "id": 56,
+        "listenCount": 5476,
+        "mainCategoryId": 14,
+        "subCategoryName": "Chemistry",
+        "url": "/podcasts/chemistry/"
+      },
+      {
+        "id": 57,
+        "listenCount": 9037,
+        "mainCategoryId": 14,
+        "subCategoryName": "Earth Sciences",
+        "url": "/podcasts/earth-sciences/"
+      },
+      {
+        "id": 58,
+        "listenCount": 4095,
+        "mainCategoryId": 14,
+        "subCategoryName": "Life Sciences",
+        "url": "/podcasts/life-sciences/"
+      },
+      {
+        "id": 59,
+        "listenCount": 3680,
+        "mainCategoryId": 14,
+        "subCategoryName": "Mathematics",
+        "url": "/podcasts/mathematics/"
+      },
+      {
+        "id": 60,
+        "listenCount": 4387,
+        "mainCategoryId": 14,
+        "subCategoryName": "Natural Sciences",
+        "url": "/podcasts/natural-sciences/"
+      },
+      {
+        "id": 61,
+        "listenCount": 8007,
+        "mainCategoryId": 14,
+        "subCategoryName": "Nature",
+        "url": "/podcasts/nature/"
+      },
+      {
+        "id": 62,
+        "listenCount": 781,
+        "mainCategoryId": 14,
+        "subCategoryName": "Physics",
+        "url": "/podcasts/physics/"
+      },
+      {
+        "id": 63,
+        "listenCount": 406,
+        "mainCategoryId": 14,
+        "subCategoryName": "Social Sciences",
+        "url": "/podcasts/social-sciences/"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Society & Culture",
+    "subCategories": [
+      {
+        "id": 64,
+        "listenCount": 3722,
+        "mainCategoryId": 15,
+        "subCategoryName": "Documentary",
+        "url": "/podcasts/documentary/"
+      },
+      {
+        "id": 65,
+        "listenCount": 8321,
+        "mainCategoryId": 15,
+        "subCategoryName": "Personal Journals",
+        "url": "/podcasts/personal-journals/"
+      },
+      {
+        "id": 66,
+        "listenCount": 8711,
+        "mainCategoryId": 15,
+        "subCategoryName": "Philosophy",
+        "url": "/podcasts/philosophy/"
+      },
+      {
+        "id": 67,
+        "listenCount": 4260,
+        "mainCategoryId": 15,
+        "subCategoryName": "Places & Travel",
+        "url": "/podcasts/places-travel/"
+      },
+      {
+        "id": 68,
+        "listenCount": 1253,
+        "mainCategoryId": 15,
+        "subCategoryName": "Relationships",
+        "url": "/podcasts/relationships/"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Sports",
+    "subCategories": [
+      {
+        "id": 69,
+        "listenCount": 3609,
+        "mainCategoryId": 16,
+        "subCategoryName": "Baseball",
+        "url": "/podcasts/baseball/"
+      },
+      {
+        "id": 70,
+        "listenCount": 7679,
+        "mainCategoryId": 16,
+        "subCategoryName": "Basketball",
+        "url": "/podcasts/basketball/"
+      },
+      {
+        "id": 71,
+        "listenCount": 6571,
+        "mainCategoryId": 16,
+        "subCategoryName": "Cricket",
+        "url": "/podcasts/cricket/"
+      },
+      {
+        "id": 72,
+        "listenCount": 2621,
+        "mainCategoryId": 16,
+        "subCategoryName": "Football",
+        "url": "/podcasts/football/"
+      },
+      {
+        "id": 73,
+        "listenCount": 1211,
+        "mainCategoryId": 16,
+        "subCategoryName": "Golf",
+        "url": "/podcasts/golf/"
+      },
+      {
+        "id": 74,
+        "listenCount": 488,
+        "mainCategoryId": 16,
+        "subCategoryName": "Hockey",
+        "url": "/podcasts/hockey/"
+      },
+      {
+        "id": 75,
+        "listenCount": 4563,
+        "mainCategoryId": 16,
+        "subCategoryName": "Rugby",
+        "url": "/podcasts/rugby/"
+      },
+      {
+        "id": 76,
+        "listenCount": 558,
+        "mainCategoryId": 16,
+        "subCategoryName": "Running",
+        "url": "/podcasts/running/"
+      },
+      {
+        "id": 77,
+        "listenCount": 3322,
+        "mainCategoryId": 16,
+        "subCategoryName": "Soccer",
+        "url": "/podcasts/soccer/"
+      },
+      {
+        "id": 78,
+        "listenCount": 4401,
+        "mainCategoryId": 16,
+        "subCategoryName": "Swimming",
+        "url": "/podcasts/swimming/"
+      },
+      {
+        "id": 79,
+        "listenCount": 200,
+        "mainCategoryId": 16,
+        "subCategoryName": "Tennis",
+        "url": "/podcasts/tennis/"
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Technology",
+    "subCategories": [
+      {
+        "id": 80,
+        "listenCount": 8700,
+        "mainCategoryId": 17,
+        "subCategoryName": "Tech News",
+        "url": "/podcasts/tech-news/"
+      },
+      {
+        "id": 81,
+        "listenCount": 4722,
+        "mainCategoryId": 17,
+        "subCategoryName": "Software How‑To",
+        "url": "/podcasts/software-howto/"
+      },
+      {
+        "id": 82,
+        "listenCount": 5291,
+        "mainCategoryId": 17,
+        "subCategoryName": "Gadgets",
+        "url": "/podcasts/gadgets/"
+      },
+      {
+        "id": 83,
+        "listenCount": 9074,
+        "mainCategoryId": 17,
+        "subCategoryName": "Internet",
+        "url": "/podcasts/internet/"
+      },
+      {
+        "id": 84,
+        "listenCount": 3857,
+        "mainCategoryId": 17,
+        "subCategoryName": "Artificial Intelligence",
+        "url": "/podcasts/artificial-intelligence/"
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "True Crime",
+    "subCategories": [
+      {
+        "id": 85,
+        "listenCount": 5451,
+        "mainCategoryId": 18,
+        "subCategoryName": "All Podcasts",
+        "url": "/podcasts/all-podcasts/"
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "TV & Film",
+    "subCategories": [
+      {
+        "id": 86,
+        "listenCount": 2629,
+        "mainCategoryId": 19,
+        "subCategoryName": "After Shows",
+        "url": "/podcasts/after-shows/"
+      },
+      {
+        "id": 87,
+        "listenCount": 346,
+        "mainCategoryId": 19,
+        "subCategoryName": "Film History",
+        "url": "/podcasts/film-history/"
+      },
+      {
+        "id": 88,
+        "listenCount": 5947,
+        "mainCategoryId": 19,
+        "subCategoryName": "Film Interviews",
+        "url": "/podcasts/film-interviews/"
+      },
+      {
+        "id": 89,
+        "listenCount": 5015,
+        "mainCategoryId": 19,
+        "subCategoryName": "Film Reviews",
+        "url": "/podcasts/film-reviews/"
+      },
+      {
+        "id": 90,
+        "listenCount": 610,
+        "mainCategoryId": 19,
+        "subCategoryName": "TV Reviews",
+        "url": "/podcasts/tv-reviews/"
+      }
+    ]
+  }
+]

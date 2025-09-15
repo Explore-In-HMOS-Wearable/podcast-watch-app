@@ -1,0 +1,12 @@
+{
+  "routerMap": [
+    {
+      "name": "GenresPage",
+      "pageSourceFile": "src/main/ets/GenresPage.ets",
+      "buildFunction": "GenresPageBuilder",
+      "data": {
+        "description": "this is pageOne"
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "module": {
+    "name": "settings",
+    "type": "har",
+    "deviceTypes": [
+      "wearable"
+    ]
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "genres",
+  "version": "1.0.0",
+  "description": "Please describe the basic information.",
+  "main": "Index.ets",
+  "author": "",
+  "dependencies": {
+    "generalutils": "file:../../utils/generalutils",
+    "commons": "file:../../utils/commons"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "color": [
+    {
+      "name": "color_1",
+      "value": "#ff0000"
+    },
+    {
+      "name": "button_color",
+      "value": "#DCCBCBCF"
+    },
+    {
+      "name": "gauge_color",
+      "value": "#005FCC"
+    },
+    {
+      "name": "base_background_gradient_start",
+      "value": "#FF0B1F3B"
+    },
+    {
+      "name": "base_background_gradient_end",
+      "value": "#FF3A0548"
+    },
+    {
+      "name": "menu_item_background",
+      "value": "#FF1F0C30"
+    }
+  ]
+}

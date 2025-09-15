@@ -1,0 +1,87 @@
+{
+  "app": {
+    "signingConfigs": [
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "targetSdkVersion": "5.1.0(18)",
+        "compatibleSdkVersion": "5.1.0(18)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "commons",
+      "srcPath": "./utils/commons"
+    },
+    {
+      "name": "player",
+      "srcPath": "./features/player",
+    },
+    {
+      "name": "settings",
+      "srcPath": "./features/settings",
+    },
+    {
+      "name": "search",
+      "srcPath": "./features/search"
+    },
+    {
+      "name": "downloads",
+      "srcPath": "./features/downloads",
+    },
+    {
+      "name": "favorites",
+      "srcPath": "./features/favorites",
+    },
+    {
+      "name": "landing",
+      "srcPath": "./features/landing",
+    },
+    {
+      "name": "splash",
+      "srcPath": "./features/splash",
+    },
+    {
+      "name": "mainlist",
+      "srcPath": "./features/mainlist",
+    },
+    {
+      "name": "genres",
+      "srcPath": "./features/genres"
+    },
+    {
+      "name": "generalutils",
+      "srcPath": "./utils/generalutils"
+    }
+  ]
+}

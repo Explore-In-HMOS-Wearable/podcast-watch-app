@@ -1,0 +1,60 @@
+{
+  "string": [
+    {
+      "name": "page_show",
+      "value": "page from package"
+    },
+    {
+      "name": "label_settings",
+      "value": "Settings"
+    },
+    {
+      "name": "label_play_from",
+      "value": "Play From"
+    },
+    {
+      "name": "label_search",
+      "value": "Search"
+    },
+    {
+      "name": "label_mainList",
+      "value": "Main List"
+    },
+    {
+      "name": "label_mainlist",
+      "value": "My Podcasts"
+    },
+    {
+      "name": "label_offline_mode",
+      "value": "Offline Mode"
+    },
+    {
+      "name": "label_play_from_watch_warning",
+      "value": "Currently not available"
+    },
+    {
+      "name": "label_downloads",
+      "value": "Downloads"
+    },
+    {
+      "name": "label_discover",
+      "value": "Discover"
+    },
+    {
+      "name": "label_favorites",
+      "value": "Favorites"
+    },
+    {
+      "name": "label_previous",
+      "value": "Previous"
+    },
+    {
+      "name": "label_downloads_empty",
+      "value": "Your download list is empty."
+    },
+    {
+      "name": "label_favorites_empty",
+      "value": "Your favorite list is empty."
+    }
+  ]
+}

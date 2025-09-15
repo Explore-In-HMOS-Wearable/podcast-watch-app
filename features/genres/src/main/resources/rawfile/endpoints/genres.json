@@ -1,0 +1,807 @@
+[
+  {
+    "id": 1,
+    "name": "Easy reading",
+    "subCategories": [
+      {
+        "id": 9,
+        "subCategoryName": "Action/suspense",
+        "mainCategoryId": 1,
+        "bookCount": 53802,
+        "url": "/genre/action-suspense-5014/"
+      },
+      {
+        "id": 11,
+        "subCategoryName": "Adventure",
+        "mainCategoryId": 1,
+        "bookCount": 59904,
+        "url": "/genre/adventure-5006/"
+      },
+      {
+        "id": 1,
+        "subCategoryName": "All books",
+        "mainCategoryId": 1,
+        "bookCount": 398862,
+        "url": "/genre/easy-reading-201583/"
+      },
+      {
+        "id": 13,
+        "subCategoryName": "Chick-lit",
+        "mainCategoryId": 1,
+        "bookCount": 4031,
+        "url": "/genre/shick-lit-201926/"
+      },
+      {
+        "id": 2,
+        "subCategoryName": "Detective novels",
+        "mainCategoryId": 1,
+        "bookCount": 71188,
+        "url": "/genre/detective-novels-5022/"
+      },
+      {
+        "id": 7,
+        "subCategoryName": "Fan fiction",
+        "mainCategoryId": 1,
+        "bookCount": 753,
+        "url": "/genre/fan-fiction-5019/"
+      },
+      {
+        "id": 4,
+        "subCategoryName": "Fantasy",
+        "mainCategoryId": 1,
+        "bookCount": 118967,
+        "url": "/genre/fantasy-5018/"
+      },
+      {
+        "id": 3,
+        "subCategoryName": "Fiction",
+        "mainCategoryId": 1,
+        "bookCount": 116757,
+        "url": "/genre/fiction-5004/"
+      },
+      {
+        "id": 8,
+        "subCategoryName": "Horror Mysticism",
+        "mainCategoryId": 1,
+        "bookCount": 41878,
+        "url": "/genre/horror-mysticism-5017/"
+      },
+      {
+        "id": 10,
+        "subCategoryName": "Humorous literature",
+        "mainCategoryId": 1,
+        "bookCount": 21202,
+        "url": "/genre/humorous-literature-5013/"
+      },
+      {
+        "id": 12,
+        "subCategoryName": "Must-read",
+        "mainCategoryId": 1,
+        "bookCount": 7576,
+        "url": "/genre/must-read-201671/"
+      },
+      {
+        "id": 5,
+        "subCategoryName": "Romance",
+        "mainCategoryId": 1,
+        "bookCount": 128190,
+        "url": "/genre/romance-5005/"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Slow reads",
+    "subCategories": [
+      {
+        "id": 14,
+        "subCategoryName": "All books",
+        "mainCategoryId": 2,
+        "bookCount": 371838,
+        "url": "/genre/slow-reads-201591/"
+      },
+      {
+        "id": 17,
+        "subCategoryName": "Biographies and memoirs",
+        "mainCategoryId": 2,
+        "bookCount": 32891,
+        "url": "/genre/biographies-and-memoirs-5169/"
+      },
+      {
+        "id": 16,
+        "subCategoryName": "Classics",
+        "mainCategoryId": 2,
+        "bookCount": 94984,
+        "url": "/genre/classics-5028/"
+      },
+      {
+        "id": 18,
+        "subCategoryName": "History ",
+        "mainCategoryId": 2,
+        "bookCount": 61488,
+        "url": "/genre/history-201719/"
+      },
+      {
+        "id": 15,
+        "subCategoryName": "Modern prose",
+        "mainCategoryId": 2,
+        "bookCount": 203827,
+        "url": "/genre/modern-prose-5015/"
+      },
+      {
+        "id": 20,
+        "subCategoryName": "Plays & Drama",
+        "mainCategoryId": 2,
+        "bookCount": 11284,
+        "url": "/genre/plays-drama-201695/"
+      },
+      {
+        "id": 19,
+        "subCategoryName": "Poetry",
+        "mainCategoryId": 2,
+        "bookCount": 39244,
+        "url": "/genre/poetry-201711/"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "History books",
+    "subCategories": [
+      {
+        "id": 21,
+        "subCategoryName": "All books",
+        "mainCategoryId": 3,
+        "bookCount": 138885,
+        "url": "/genre/history-books-201599/"
+      },
+      {
+        "id": 29,
+        "subCategoryName": "Biographies and memoirs",
+        "mainCategoryId": 3,
+        "bookCount": 32891,
+        "url": "/genre/biographies-and-memoirs-5169/"
+      },
+      {
+        "id": 25,
+        "subCategoryName": "Books about travel",
+        "mainCategoryId": 3,
+        "bookCount": 12856,
+        "url": "/genre/books-about-travel-5094/"
+      },
+      {
+        "id": 24,
+        "subCategoryName": "Books about war",
+        "mainCategoryId": 3,
+        "bookCount": 6970,
+        "url": "/genre/books-about-war-5205/"
+      },
+      {
+        "id": 23,
+        "subCategoryName": "Historical adventure",
+        "mainCategoryId": 3,
+        "bookCount": 10923,
+        "url": "/genre/historical-adventure-5095/"
+      },
+      {
+        "id": 32,
+        "subCategoryName": "Historical detective novels",
+        "mainCategoryId": 3,
+        "bookCount": 4638,
+        "url": "/genre/historical-detective-novels-5258/"
+      },
+      {
+        "id": 22,
+        "subCategoryName": "Historical fantasy",
+        "mainCategoryId": 3,
+        "bookCount": 7954,
+        "url": "/genre/historical-fantasy-5227/"
+      },
+      {
+        "id": 30,
+        "subCategoryName": "Historical fiction",
+        "mainCategoryId": 3,
+        "bookCount": 13818,
+        "url": "/genre/historical-fiction-5071/"
+      },
+      {
+        "id": 28,
+        "subCategoryName": "Historical literature",
+        "mainCategoryId": 3,
+        "bookCount": 33480,
+        "url": "/genre/historical-literature-5209/"
+      },
+      {
+        "id": 26,
+        "subCategoryName": "Historical romance",
+        "mainCategoryId": 3,
+        "bookCount": 11686,
+        "url": "/genre/historical-romance-5087/"
+      },
+      {
+        "id": 31,
+        "subCategoryName": "Maritime adventure",
+        "mainCategoryId": 3,
+        "bookCount": 3558,
+        "url": "/genre/maritime-adventure-5092/"
+      },
+      {
+        "id": 27,
+        "subCategoryName": "Nonfiction",
+        "mainCategoryId": 3,
+        "bookCount": 20003,
+        "url": "/genre/nonfiction-5170/"
+      },
+      {
+        "id": 33,
+        "subCategoryName": "Popular history",
+        "mainCategoryId": 3,
+        "bookCount": 4902,
+        "url": "/genre/popular-history-201727/"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Business books",
+    "subCategories": [
+      {
+        "id": 54,
+        "subCategoryName": "Accounting & Taxation and Auditing",
+        "mainCategoryId": 4,
+        "bookCount": 2837,
+        "url": "/genre/accounting-taxation-and-auditing-5051/"
+      },
+      {
+        "id": 34,
+        "subCategoryName": "All books",
+        "mainCategoryId": 4,
+        "bookCount": 62965,
+        "url": "/genre/business-books-5003/"
+      },
+      {
+        "id": 56,
+        "subCategoryName": "Banking",
+        "mainCategoryId": 4,
+        "bookCount": 1404,
+        "url": "/genre/banking-5049/"
+      },
+      {
+        "id": 47,
+        "subCategoryName": "Business &  Popular",
+        "mainCategoryId": 4,
+        "bookCount": 11603,
+        "url": "/genre/business-popular-5058/"
+      },
+      {
+        "id": 65,
+        "subCategoryName": "Business directory",
+        "mainCategoryId": 4,
+        "bookCount": 134,
+        "url": "/genre/business-directory-210646/"
+      },
+      {
+        "id": 50,
+        "subCategoryName": "Corporate culture",
+        "mainCategoryId": 4,
+        "bookCount": 568,
+        "url": "/genre/corporate-culture-5055/"
+      },
+      {
+        "id": 53,
+        "subCategoryName": "Economics",
+        "mainCategoryId": 4,
+        "bookCount": 11116,
+        "url": "/genre/economics-5052/"
+      },
+      {
+        "id": 62,
+        "subCategoryName": "Federal and municipal management",
+        "mainCategoryId": 4,
+        "bookCount": 1654,
+        "url": "/genre/federal-and-municipal-management-6784/"
+      },
+      {
+        "id": 52,
+        "subCategoryName": "Finance",
+        "mainCategoryId": 4,
+        "bookCount": 3786,
+        "url": "/genre/finance-5053/"
+      },
+      {
+        "id": 44,
+        "subCategoryName": "Foreign business books",
+        "mainCategoryId": 4,
+        "bookCount": 11483,
+        "url": "/genre/foreign-business-books-5061/"
+      },
+      {
+        "id": 51,
+        "subCategoryName": "Industry publications",
+        "mainCategoryId": 4,
+        "bookCount": 3215,
+        "url": "/genre/industry-publications-5054/"
+      },
+      {
+        "id": 60,
+        "subCategoryName": "Job search &  Careers",
+        "mainCategoryId": 4,
+        "bookCount": 1622,
+        "url": "/genre/job-search-careers-5046/"
+      },
+      {
+        "id": 58,
+        "subCategoryName": "Logistics",
+        "mainCategoryId": 4,
+        "bookCount": 2245,
+        "url": "/genre/logistics-5375/"
+      },
+      {
+        "id": 35,
+        "subCategoryName": "Management",
+        "mainCategoryId": 4,
+        "bookCount": 11467,
+        "url": "/genre/management-5070/"
+      },
+      {
+        "id": 61,
+        "subCategoryName": "Management and personnel",
+        "mainCategoryId": 4,
+        "bookCount": 2497,
+        "url": "/genre/management-and-personnel-6462/"
+      },
+      {
+        "id": 57,
+        "subCategoryName": "Marketing & PR and Advertising",
+        "mainCategoryId": 4,
+        "bookCount": 4268,
+        "url": "/genre/marketing-pr-advertising-5048/"
+      },
+      {
+        "id": 38,
+        "subCategoryName": "Negotiation",
+        "mainCategoryId": 4,
+        "bookCount": 380,
+        "url": "/genre/negotiation-5067/"
+      },
+      {
+        "id": 43,
+        "subCategoryName": "Online business",
+        "mainCategoryId": 4,
+        "bookCount": 1059,
+        "url": "/genre/online-business-5062/"
+      },
+      {
+        "id": 39,
+        "subCategoryName": "Oratory & Rhetoric",
+        "mainCategoryId": 4,
+        "bookCount": 623,
+        "url": "/genre/oratory-rhetoric-5066/"
+      },
+      {
+        "id": 41,
+        "subCategoryName": "Personal effectiveness",
+        "mainCategoryId": 4,
+        "bookCount": 5006,
+        "url": "/genre/personal-effectiveness-5064/"
+      },
+      {
+        "id": 49,
+        "subCategoryName": "Personal finance",
+        "mainCategoryId": 4,
+        "bookCount": 2157,
+        "url": "/genre/personal-finance-5056/"
+      },
+      {
+        "id": 59,
+        "subCategoryName": "Personnel management",
+        "mainCategoryId": 4,
+        "bookCount": 6057,
+        "url": "/genre/personnel-management-5047/"
+      },
+      {
+        "id": 63,
+        "subCategoryName": "Political governance",
+        "mainCategoryId": 4,
+        "bookCount": 153,
+        "url": "/genre/political-governance-6810/"
+      },
+      {
+        "id": 48,
+        "subCategoryName": "Real estate",
+        "mainCategoryId": 4,
+        "bookCount": 433,
+        "url": "/genre/real-estate-5057/"
+      },
+      {
+        "id": 42,
+        "subCategoryName": "Sales",
+        "mainCategoryId": 4,
+        "bookCount": 1531,
+        "url": "/genre/sales-5063/"
+      },
+      {
+        "id": 55,
+        "subCategoryName": "Securities and investments",
+        "mainCategoryId": 4,
+        "bookCount": 1850,
+        "url": "/genre/securities-and-investments-5050/"
+      },
+      {
+        "id": 46,
+        "subCategoryName": "Small business",
+        "mainCategoryId": 4,
+        "bookCount": 1625,
+        "url": "/genre/small-business-5059/"
+      },
+      {
+        "id": 37,
+        "subCategoryName": "Startups and business creation",
+        "mainCategoryId": 4,
+        "bookCount": 1169,
+        "url": "/genre/startups-and-business-creation-5068/"
+      },
+      {
+        "id": 64,
+        "subCategoryName": "Summaries",
+        "mainCategoryId": 4,
+        "bookCount": 2602,
+        "url": "/genre/summaries-201413/"
+      },
+      {
+        "id": 40,
+        "subCategoryName": "Time management",
+        "mainCategoryId": 4,
+        "bookCount": 528,
+        "url": "/genre/time-management-5065/"
+      },
+      {
+        "id": 45,
+        "subCategoryName": "Workflow",
+        "mainCategoryId": 4,
+        "bookCount": 222,
+        "url": "/genre/workflow-5060/"
+      },
+      {
+        "id": 36,
+        "subCategoryName": "Working with customers",
+        "mainCategoryId": 4,
+        "bookCount": 364,
+        "url": "/genre/working-with-customers-5069/"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Knowledge and skills",
+    "subCategories": [
+      {
+        "id": 66,
+        "subCategoryName": "All books",
+        "mainCategoryId": 5,
+        "bookCount": 354179,
+        "url": "/genre/knowledge-and-skills-201623/"
+      },
+      {
+        "id": 69,
+        "subCategoryName": "Computers",
+        "mainCategoryId": 5,
+        "bookCount": 13972,
+        "url": "/genre/computers-5024/"
+      },
+      {
+        "id": 70,
+        "subCategoryName": "Culture and art",
+        "mainCategoryId": 5,
+        "bookCount": 36317,
+        "url": "/genre/culture-and-art-5020/"
+      },
+      {
+        "id": 73,
+        "subCategoryName": "Dictionaries &  Reference",
+        "mainCategoryId": 5,
+        "bookCount": 29191,
+        "url": "/genre/dictionaries-reference-5009/"
+      },
+      {
+        "id": 72,
+        "subCategoryName": "Esoterics",
+        "mainCategoryId": 5,
+        "bookCount": 29631,
+        "url": "/genre/esoterics-5011/"
+      },
+      {
+        "id": 76,
+        "subCategoryName": "Foreign languages",
+        "mainCategoryId": 5,
+        "bookCount": 10629,
+        "url": "/genre/foreign-languages-6356/"
+      },
+      {
+        "id": 67,
+        "subCategoryName": "Popular science",
+        "mainCategoryId": 5,
+        "bookCount": 6445,
+        "url": "/genre/popular-science-5031/"
+      },
+      {
+        "id": 68,
+        "subCategoryName": "Science and education",
+        "mainCategoryId": 5,
+        "bookCount": 249617,
+        "url": "/genre/science-and-education-5030/"
+      },
+      {
+        "id": 71,
+        "subCategoryName": "Self-Development &  Personal Growth",
+        "mainCategoryId": 5,
+        "bookCount": 24465,
+        "url": "/genre/self-development-personal-growth-5253/"
+      },
+      {
+        "id": 75,
+        "subCategoryName": "Stories from the life",
+        "mainCategoryId": 5,
+        "bookCount": 3628,
+        "url": "/genre/stories-from-the-life-53055/"
+      },
+      {
+        "id": 74,
+        "subCategoryName": "Travel guides",
+        "mainCategoryId": 5,
+        "bookCount": 1964,
+        "url": "/genre/travel-guides-5163/"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Psychology & Motivation",
+    "subCategories": [
+      {
+        "id": 77,
+        "subCategoryName": "All books",
+        "mainCategoryId": 6,
+        "bookCount": 163166,
+        "url": "/genre/psychology-motivation-201631/"
+      },
+      {
+        "id": 83,
+        "subCategoryName": "Biographies and memoirs",
+        "mainCategoryId": 6,
+        "bookCount": 32890,
+        "url": "/genre/biographies-and-memoirs-5169/"
+      },
+      {
+        "id": 79,
+        "subCategoryName": "Culture and art",
+        "mainCategoryId": 6,
+        "bookCount": 36318,
+        "url": "/genre/culture-and-art-5020/"
+      },
+      {
+        "id": 82,
+        "subCategoryName": "Esoterics",
+        "mainCategoryId": 6,
+        "bookCount": 29631,
+        "url": "/genre/esoterics-5011/"
+      },
+      {
+        "id": 78,
+        "subCategoryName": "Psychology books",
+        "mainCategoryId": 6,
+        "bookCount": 61447,
+        "url": "/genre/psychology-books-5021/"
+      },
+      {
+        "id": 80,
+        "subCategoryName": "Religion",
+        "mainCategoryId": 6,
+        "bookCount": 17484,
+        "url": "/genre/religion-5012/"
+      },
+      {
+        "id": 81,
+        "subCategoryName": "Self-development &  Personal growth",
+        "mainCategoryId": 6,
+        "bookCount": 24470,
+        "url": "/genre/self-development-personal-growth-5253/"
+      },
+      {
+        "id": 84,
+        "subCategoryName": "Stories from the life",
+        "mainCategoryId": 6,
+        "bookCount": 3628,
+        "url": "/genre/stories-from-the-life-53055/"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Sports & Health & Beauty",
+    "subCategories": [
+      {
+        "id": 85,
+        "subCategoryName": "All books",
+        "mainCategoryId": 7,
+        "bookCount": 32690,
+        "url": "/genre/sports-health-beauty-201615/"
+      },
+      {
+        "id": 87,
+        "subCategoryName": "Beauty",
+        "mainCategoryId": 7,
+        "bookCount": 2455,
+        "url": "/genre/beauty-201767/"
+      },
+      {
+        "id": 89,
+        "subCategoryName": "Medicine and health",
+        "mainCategoryId": 7,
+        "bookCount": 23456,
+        "url": "/genre/medicine-and-health-201743/"
+      },
+      {
+        "id": 86,
+        "subCategoryName": "Sexual guides",
+        "mainCategoryId": 7,
+        "bookCount": 1490,
+        "url": "/genre/sexual-guides-5310/"
+      },
+      {
+        "id": 88,
+        "subCategoryName": "Sport",
+        "mainCategoryId": 7,
+        "bookCount": 7148,
+        "url": "/genre/sport-201759/"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Hobby",
+    "subCategories": [
+      {
+        "id": 90,
+        "subCategoryName": "All books",
+        "mainCategoryId": 8,
+        "bookCount": 57179,
+        "url": "/genre/hobby-201639/"
+      },
+      {
+        "id": 99,
+        "subCategoryName": "Arts and crafts",
+        "mainCategoryId": 8,
+        "bookCount": 6313,
+        "url": "/genre/arts-and-crafts-5280/"
+      },
+      {
+        "id": 95,
+        "subCategoryName": "Cars and traffic laws",
+        "mainCategoryId": 8,
+        "bookCount": 1331,
+        "url": "/genre/cars-and-traffic-laws-5283/"
+      },
+      {
+        "id": 105,
+        "subCategoryName": "Cooking",
+        "mainCategoryId": 8,
+        "bookCount": 7504,
+        "url": "/genre/cooking-5275/"
+      },
+      {
+        "id": 103,
+        "subCategoryName": "Do-it-yourself",
+        "mainCategoryId": 8,
+        "bookCount": 13101,
+        "url": "/genre/do-it-yourself-5276/"
+      },
+      {
+        "id": 98,
+        "subCategoryName": "Entertainment",
+        "mainCategoryId": 8,
+        "bookCount": 3630,
+        "url": "/genre/entertainment-5281/"
+      },
+      {
+        "id": 94,
+        "subCategoryName": "Fashion and style",
+        "mainCategoryId": 8,
+        "bookCount": 2148,
+        "url": "/genre/fashion-and-style-5285/"
+      },
+      {
+        "id": 108,
+        "subCategoryName": "Fishing",
+        "mainCategoryId": 8,
+        "bookCount": 198,
+        "url": "/genre/fishing-6825/"
+      },
+      {
+        "id": 96,
+        "subCategoryName": "Gardening",
+        "mainCategoryId": 8,
+        "bookCount": 1715,
+        "url": "/genre/gardening-5282/"
+      },
+      {
+        "id": 102,
+        "subCategoryName": "Graphic arts",
+        "mainCategoryId": 8,
+        "bookCount": 7706,
+        "url": "/genre/graphic-arts-5236/"
+      },
+      {
+        "id": 92,
+        "subCategoryName": "Hobbies and interests",
+        "mainCategoryId": 8,
+        "bookCount": 7847,
+        "url": "/genre/hobbies-and-interests-5287/"
+      },
+      {
+        "id": 93,
+        "subCategoryName": "Hunting",
+        "mainCategoryId": 8,
+        "bookCount": 231,
+        "url": "/genre/hunting-5286/"
+      },
+      {
+        "id": 109,
+        "subCategoryName": "Iintellectual game",
+        "mainCategoryId": 8,
+        "bookCount": 430,
+        "url": "/genre/iintellectual-game-209790/"
+      },
+      {
+        "id": 97,
+        "subCategoryName": "Instructional books",
+        "mainCategoryId": 8,
+        "bookCount": 3883,
+        "url": "/genre/instructional-books-5216/"
+      },
+      {
+        "id": 107,
+        "subCategoryName": "Nature and animals",
+        "mainCategoryId": 8,
+        "bookCount": 3269,
+        "url": "/genre/nature-and-animals-5274/"
+      },
+      {
+        "id": 100,
+        "subCategoryName": "Photography",
+        "mainCategoryId": 8,
+        "bookCount": 600,
+        "url": "/genre/photography-5237/"
+      },
+      {
+        "id": 101,
+        "subCategoryName": "Sports and fitness",
+        "mainCategoryId": 8,
+        "bookCount": 6361,
+        "url": "/genre/sports-and-fitness-5278/"
+      },
+      {
+        "id": 106,
+        "subCategoryName": "Travel guides",
+        "mainCategoryId": 8,
+        "bookCount": 1964,
+        "url": "/genre/travel-guides-5163/"
+      },
+      {
+        "id": 91,
+        "subCategoryName": "Vacationing and tourism",
+        "mainCategoryId": 8,
+        "bookCount": 2123,
+        "url": "/genre/vacationing-and-tourism-5289/"
+      },
+      {
+        "id": 104,
+        "subCategoryName": "Yoga",
+        "mainCategoryId": 8,
+        "bookCount": 861,
+        "url": "/genre/yoga-5179/"
+      }
+    ]
+  }
+
+]

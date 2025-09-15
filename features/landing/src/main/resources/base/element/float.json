@@ -1,0 +1,20 @@
+{
+  "float": [
+    {
+      "name": "menu_item_font_size",
+      "value": "17fp"
+    },
+    {
+      "name": "header_font_size",
+      "value": "23fp"
+    },
+    {
+      "name": "version_font_size",
+      "value": "10fp"
+    },
+    {
+      "name": "warning_font_size",
+      "value": "10fp"
+    }
+  ]
+}

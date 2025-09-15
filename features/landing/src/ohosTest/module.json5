@@ -1,0 +1,11 @@
+{
+  "module": {
+    "name": "landing_test",
+    "type": "feature",
+    "deviceTypes": [
+      "wearable"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false
+  }
+}

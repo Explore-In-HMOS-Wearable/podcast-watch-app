@@ -1,0 +1,11 @@
+{
+  "devDependencies": {},
+  "author": "",
+  "name": "generalutils",
+  "description": "Please describe the basic information.",
+  "main": "Index.ets",
+  "version": "1.0.0",
+  "dependencies": {
+    "@ohos/lottie": "^2.0.8"
+  }
+}
