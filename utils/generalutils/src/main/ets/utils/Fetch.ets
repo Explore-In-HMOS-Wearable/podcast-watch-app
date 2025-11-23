@@ -3,7 +3,7 @@ import { BusinessError } from '@kit.BasicServicesKit';
 
 export async function fetch(context: Context, endpoint: string) {
 
-  let items = new Object();
+  let items: Object = [];
 
   try {
     await context.resourceManager.getRawFileContent(endpoint)
@@ -14,7 +14,7 @@ export async function fetch(context: Context, endpoint: string) {
         items = JSON.parse(jsonString);
       })
       .catch((error: BusinessError) => {
-        console.error("getRawFileContent promise error is " + error);
+        console.error(`getRawFileContent promise error is ${error}`);
       });
   } catch (error) {
     let code = (error as BusinessError).code;

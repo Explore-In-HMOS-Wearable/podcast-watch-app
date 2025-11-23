@@ -19,7 +19,7 @@ function buildText() {
 
 export class TmpClass {
   podcasts: SongModel[] = []
-  listName: string = ""
+  listName: string = ''
 
   constructor(podcasts: SongModel[], listName: string) {
     this.podcasts = podcasts;
@@ -209,7 +209,7 @@ export struct Landing {
             })
               .margin(0)
               .width('80px')
-              .scale({ x: .9, y: .9 })
+              .scale({ x: 0.9, y: 0.9 })
           }
           .padding({
             left: 12,
@@ -277,7 +277,7 @@ export struct Landing {
       .linearGradient({
         direction: GradientDirection.Bottom,
         colors: [[$r('app.color.base_background_gradient_start'), 0.0],
-          [$r('app.color.base_background_gradient_end'), 1],]
+          [$r('app.color.base_background_gradient_end'), 1]]
       })
       .gesture(
         PanGesture()

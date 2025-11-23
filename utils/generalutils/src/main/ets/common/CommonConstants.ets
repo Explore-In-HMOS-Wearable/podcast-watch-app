@@ -12,7 +12,7 @@ export class CommonConstants {
   static readonly SECOND_LEVEL_OPACITY: number = 0.6;
   static readonly HALF_OPACITY: number = 0.5;
   static readonly THIRD_LEVEL_OPACITY: number = 0.3;
-  static readonly Divider_OPACITY: number = 0.05;
+  static readonly DIVIDER_OPACITY: number = 0.05;
   // Blur
   static readonly REGULAR_BLUR: number = 250;
   // Space

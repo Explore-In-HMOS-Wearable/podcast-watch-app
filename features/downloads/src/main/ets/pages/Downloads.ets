@@ -71,7 +71,7 @@ export struct Downloads {
       }, (item: SongModel) => item.songName)
 
       ArcListItem() {
-        if (this.commonModule.appService.getDownloads().length == 0) {
+        if (this.commonModule.appService.getDownloads().length === 0) {
           Row() {
             Text($r('app.string.label_downloads_empty'))
               .fontSize('14fp')
@@ -82,7 +82,7 @@ export struct Downloads {
     }.linearGradient({
       direction: GradientDirection.Bottom,
       colors: [[$r('app.color.base_background_gradient_start'), 0.0],
-        [$r('app.color.base_background_gradient_end'), 1],]
+        [$r('app.color.base_background_gradient_end'), 1]]
     })
 
     }

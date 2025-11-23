@@ -28,7 +28,7 @@ export class SongModel {
 
 export class TmpClass {
   podcasts: SongModel[] = []
-  listName: string = ""
+  listName: string = ''
   isMainList: boolean=true
 
   constructor(podcasts: SongModel[], listName: string,isMainList: boolean) {

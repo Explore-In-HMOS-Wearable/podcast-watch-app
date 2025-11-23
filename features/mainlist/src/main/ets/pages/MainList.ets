@@ -14,7 +14,7 @@ export struct MainList {
   commonModule: CommonModule = CommonModule.getInstance();
   pageInfos: NavPathStack = new NavPathStack();
   @State podcasts: SongModel[] = []
-  @State listName: string = ""
+  @State listName: string = ''
   @Provide isMain: boolean = false
 
   aboutToAppear(): void {
@@ -99,7 +99,7 @@ export struct MainList {
     .linearGradient({
       direction: GradientDirection.Bottom,
       colors: [[$r('app.color.base_background_gradient_start'), 0.0],
-        [$r('app.color.base_background_gradient_end'), 1],]
+        [$r('app.color.base_background_gradient_end'), 1]]
     })
 
     .hideTitleBar(true)

@@ -9,20 +9,20 @@ export struct CategoryTabComponent {
   @BuilderParam tabContent?: (index: number) => void
   @Prop category: Category;
   commonModule: CommonModule = CommonModule.getInstance();
-  private ColorFilterMatrix: number[] = [
+  private colorFilterMatrix: number[] = [
     0, 0, 0, 0, 0.6470588235,
     0, 0, 0, 0, 0.6,
     0, 0, 0, 0, 0.6,
     0, 0, 0, 1, 0
   ];
-  @State DrawingColorFilterFirst: ColorFilter | undefined = new ColorFilter(this.ColorFilterMatrix);
+  @State drawingColorFilterFirst: ColorFilter | undefined = new ColorFilter(this.colorFilterMatrix);
 
   build() {
     Column() {
       Row() {
         Column() {
           Text(this.category.name)
-            .fontFamily("roboto_bold")
+            .fontFamily('roboto_bold')
             .fontWeight(FontWeight.Bold)
             .fontSize('12.50fp')
             .textAlign(TextAlign.Center)
@@ -44,7 +44,7 @@ export struct CategoryTabComponent {
         Column() {
           Image($r('app.media.arrowsvg'))
             .width('17.00vp')
-            .colorFilter(this.DrawingColorFilterFirst)
+            .colorFilter(this.drawingColorFilterFirst)
 
 
         }
@@ -54,7 +54,7 @@ export struct CategoryTabComponent {
         .align(Alignment.Center)
 
       }
-      .height("23vp")
+      .height('23vp')
       .margin(7)
 
 
@@ -74,13 +74,13 @@ export struct CategoryTabComponent {
 
               Row() {
                 Text(item.subCategoryName)
-                  .fontFamily("roboto_medium")
+                  .fontFamily('roboto_medium')
                   .fontWeight(FontWeight.Medium)
                   .fontSize('11.50fp')
                   .textAlign(TextAlign.Center)
-                  .height("100%")
+                  .height('100%')
                   .textCase(TextCase.Normal)
-                  .padding({ left: "1.5vp" })
+                  .padding({ left: '1.5vp' })
                   .fontColor('#ffa59999')
                   .onClick(() => {
 
@@ -89,12 +89,12 @@ export struct CategoryTabComponent {
 
                   })
               }
-              .height("20%")
+              .height('20%')
 
             }
-            .height("100%")
-            .width("65vp")
-            .margin("5vp")
+            .height('100%')
+            .width('65vp')
+            .margin('5vp')
 
           })
         }
@@ -102,7 +102,7 @@ export struct CategoryTabComponent {
       .scrollable(ScrollDirection.Horizontal)
       .enableScrollInteraction(true)
       .width('100%')
-      .height("155vp")
+      .height('155vp')
       .margin({
         top: '0.00vp',
         right: '8.00vp',
@@ -111,8 +111,8 @@ export struct CategoryTabComponent {
       })
       .scrollBar(BarState.Off)
     }
-    .height("125vp")
-    .width("100%")
+    .height('125vp')
+    .width('100%')
     .justifyContent(FlexAlign.Center)
   }
 }

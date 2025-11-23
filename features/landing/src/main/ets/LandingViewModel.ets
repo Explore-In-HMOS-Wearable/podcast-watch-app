@@ -4,10 +4,10 @@ export class IndexViewModel {
   @Trace offlineMode: boolean = false;
 
   async playFromChange(playFromWatch: boolean) {
-    if (playFromWatch != this.playFromWatch) {
+    if (playFromWatch !== this.playFromWatch) {
       this.playFromWatch = playFromWatch
 
-      if (playFromWatch == false) {
+      if (playFromWatch === false) {
         const result: boolean = await new Promise((resolve: Function) => {
           setTimeout(() => {
             resolve(true);

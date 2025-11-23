@@ -8,7 +8,7 @@ export class SearchPageViewModel extends BaseViewModel {
   songItemOnClick(item: SongModel) {
     this.appService.currentSong = item;
 
-    if (this.appService.previousSearches.indexOf(item) == -1) {
+    if (this.appService.previousSearches.indexOf(item) === -1) {
       this.appService.previousSearches.push(item);
     }
     this.navigationService.pageInfos.pushPath({ name: 'Player' })

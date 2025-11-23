@@ -161,7 +161,7 @@ export struct PlayerPage {
 
                   Row() {
                     Gauge({ value: this.commonModule.audioService.progress, min: 0, max: 100 }) {
-                      Image(this.playerVm.audioService.audioStatus == AudioStatus.Playing ?
+                      Image(this.playerVm.audioService.audioStatus === AudioStatus.Playing ?
                       this.commonModule.commonMedia.pause :
                       this.commonModule.commonMedia.start)
                         .width(40)
@@ -212,7 +212,7 @@ export struct PlayerPage {
             .linearGradient({
               direction: GradientDirection.Bottom,
               colors: [['#801E90FF', 0.0],
-                ['#80666666', 1],]
+                ['#80666666', 1]]
             })
 
           } else if(this.playerVm.appService.currentSong.isInList){
@@ -303,7 +303,7 @@ export struct PlayerPage {
       .linearGradient({
         direction: GradientDirection.Bottom,
         colors: [[this.commonModule.commonColors.baseBackgroundGradientStart, 0.0],
-          [this.commonModule.commonColors.baseBackgroundGradientEnd, 1],]
+          [this.commonModule.commonColors.baseBackgroundGradientEnd, 1]]
       })
       .backgroundColor(Color.Black);
 

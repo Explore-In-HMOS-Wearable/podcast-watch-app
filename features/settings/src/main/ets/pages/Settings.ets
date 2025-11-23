@@ -106,14 +106,14 @@ export struct Settings {
     ArcListItem() {
       Column() {
         Text(model.menuText)
-          .fontSize(this.commonModule.commonFloats.menu_item_font_size)
+          .fontSize(this.commonModule.commonFloats.MENU_ITEM_FONT_SIZE)
           .fontColor(Color.White);
         Text(model.menuSubText)
           .fontSize('10fp')
           .fontColor(Color.Gray)
       }
       .padding({ left: 12, bottom: 12, top: 12 })
-      .backgroundColor(this.commonModule.commonColors.menuItem_Background)
+      .backgroundColor(this.commonModule.commonColors.menuItemBackground)
       .width('90%')
       .height('90px')
       .borderRadius(48)
@@ -144,7 +144,7 @@ export struct Settings {
     .linearGradient({
       direction: GradientDirection.Bottom,
       colors: [[this.commonModule.commonColors.baseBackgroundGradientStart, 0.0],
-        [this.commonModule.commonColors.baseBackgroundGradientEnd, 1],]
+        [this.commonModule.commonColors.baseBackgroundGradientEnd, 1]]
     })
 
     }

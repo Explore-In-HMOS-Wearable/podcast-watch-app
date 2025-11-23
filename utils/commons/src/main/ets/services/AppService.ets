@@ -79,7 +79,7 @@ export class AppService {
 
     const sliced = filtered.slice(startIndex, endIndex);
 
-    if (filtered.length > 3 && sliced.length == 3) {
+    if (filtered.length > 3 && sliced.length === 3) {
       this.showReloadButton = true;
     } else {
       this.showReloadButton = false;

@@ -20,8 +20,15 @@ export struct GenresPage {
   }
 
   private async Init() {
-    let categories = await getCategories(getContext(this))
-    this.dataSource.pushArrayData(categories)
+    const hostContext = this.getUIContext()?.getHostContext();
+    if(!hostContext){
+      console.error('Host Context is undefined');
+      return;
+    }
+
+    const categories = await getCategories(hostContext);
+    this.dataSource.pushArrayData(categories);
+
   }
 
   async onPageShow() {
@@ -56,11 +63,11 @@ export struct GenresPage {
       .alignItems(HorizontalAlign.Center)
       .backgroundColor(Color.White)
       .margin({ bottom: '125vp' })
-      .height("100%")
+      .height('100%')
       .linearGradient({
         direction: GradientDirection.Bottom,
         colors: [[$r('app.color.base_background_gradient_start'), 0.0],
-          [$r('app.color.base_background_gradient_end'), 1],]
+          [$r('app.color.base_background_gradient_end'), 1]]
       })
     }
 

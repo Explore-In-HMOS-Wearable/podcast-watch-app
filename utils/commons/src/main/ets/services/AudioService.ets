@@ -14,7 +14,11 @@ enum AudioStatus {
 @ObservedV2
 export class AudioService {
   static _instance: AudioService;
-
+  private context?: common.UIAbilityContext;
+  private player?: media.AVPlayer;
+  private progressTimer?: number;
+  @Trace audioStatus: AudioStatus;
+  @Trace progress: number = 0;
 
   // Ensure only one instance of this ViewModel is created
   static getInstance() {
@@ -28,17 +32,17 @@ export class AudioService {
     this.audioStatus = audioStatus;
   }
 
+public init(context: common.UIAbilityContext){
+    this.context = context;
+}
 
-  private player: media.AVPlayer | undefined;
-  @Trace audioStatus: AudioStatus;
-  private progressTimer: number | undefined;
-  @Trace progress: number = 0;
+
 
   private startProgressUpdater() {
     this.clearProgressUpdater(); // Clear any existing timer
     this.progressTimer = setInterval(() => {
       this.progress = this.getCurrentProgressPercentage();
-      console.log(`Progress: ${this.progress}%`);
+      console.info(`Progress: ${this.progress}%`);
       // You can also notify the UI here via state or event if needed
     }, 1000); // update every second
   }
@@ -101,9 +105,13 @@ export class AudioService {
   }
 
   public async playEmbeddedMp3(fileName: string) {
-    this.release();
-    const context = getContext(this) as common.UIAbilityContext;
-    const resourceFd = await context.resourceManager.getRawFd(fileName);
+
+    if(!this.context){
+      console.error('AudioService not initialized with context!');
+      return;
+    }
+
+    const resourceFd = await this.context.resourceManager.getRawFd(fileName);
 
     const avFileDescriptor: media.AVFileDescriptor = {
       fd: resourceFd.fd,
