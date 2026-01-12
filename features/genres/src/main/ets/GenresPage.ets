@@ -1,17 +1,18 @@
 import { LazyDataSource } from 'generalutils';
 import { CategoryTabComponent } from './CategoryTabComponent';
-import { Category } from './model/category-model';
-import { getCategories } from './viewmodel/category-viewmodel';
+import { Category } from './model/CategoryModel';
+import { getCategories } from './viewmodel/CategoryViewmodel';
 
 @Builder
 export function GenresPageBuilder(name: string, param: Object) {
   GenresPage()
 }
 
+@Entry
 @Component
 export struct GenresPage {
   pageInfos: NavPathStack = new NavPathStack();
-  @State message: string = 'GenresPage';
+  message: string = 'GenresPage';
   scroller: Scroller = new Scroller()
   dataSource: LazyDataSource<Category> = new LazyDataSource();
 
@@ -21,7 +22,7 @@ export struct GenresPage {
 
   private async Init() {
     const hostContext = this.getUIContext()?.getHostContext();
-    if(!hostContext){
+    if (!hostContext) {
       console.error('Host Context is undefined');
       return;
     }
@@ -45,7 +46,7 @@ export struct GenresPage {
             ListItem() {
               CategoryTabComponent({ category: item })
             }
-          }, (item: Category) => item.name)
+          }, (item: string, index: number) => item)
 
           ListItem() {
             Text('Transparent').fontColor(Color.Transparent)
@@ -57,6 +58,9 @@ export struct GenresPage {
         .scrollSnapAlign(ScrollSnapAlign.NONE)
         .listDirection(Axis.Vertical)
         .edgeEffect(EdgeEffect.Fade)
+        .cachedCount(10)
+        .width('100%')
+        .height('100%')
 
       }
       .justifyContent(FlexAlign.Start)
@@ -67,7 +71,7 @@ export struct GenresPage {
       .linearGradient({
         direction: GradientDirection.Bottom,
         colors: [[$r('app.color.base_background_gradient_start'), 0.0],
-          [$r('app.color.base_background_gradient_end'), 1]]
+          [$r('app.color.base_background_gradient_end'), 1],]
       })
     }
 

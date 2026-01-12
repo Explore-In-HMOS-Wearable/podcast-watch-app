@@ -1,8 +1,9 @@
-import { Category } from './model/category-model';
-import { SubCategory } from './model/subcategory-model';
+import { Category } from './model/CategoryModel';
+import { SubCategory } from './model/SubcategoryModel';
 import { CommonModule } from 'commons';
 import { TmpClass } from 'commons/src/main/ets/models/SongModel';
 
+@Reusable
 @Component
 export struct CategoryTabComponent {
   private scroller: Scroller = new Scroller();
@@ -24,7 +25,7 @@ export struct CategoryTabComponent {
           Text(this.category.name)
             .fontFamily('roboto_bold')
             .fontWeight(FontWeight.Bold)
-            .fontSize('12.50fp')
+            .fontSize('12fp')
             .textAlign(TextAlign.Center)
             .textCase(TextCase.UpperCase)
             .fontColor('#ffa59999')
@@ -34,16 +35,14 @@ export struct CategoryTabComponent {
         .onClick(() => {
 
           this.commonModule.navigationService.pageInfos.pushPathByName('MainListPage',
-            new TmpClass(this.commonModule.appService.getAllPotentialSongs(), this.category.name, false))
-
+            new TmpClass(this.commonModule.appService.getAllSongs(), this.category.name, true))
         })
-
 
         Blank().width('5vp')
 
         Column() {
           Image($r('app.media.arrowsvg'))
-            .width('17.00vp')
+            .width('15.00vp')
             .colorFilter(this.drawingColorFilterFirst)
 
 
@@ -76,7 +75,7 @@ export struct CategoryTabComponent {
                 Text(item.subCategoryName)
                   .fontFamily('roboto_medium')
                   .fontWeight(FontWeight.Medium)
-                  .fontSize('11.50fp')
+                  .fontSize('11fp')
                   .textAlign(TextAlign.Center)
                   .height('100%')
                   .textCase(TextCase.Normal)
@@ -85,8 +84,7 @@ export struct CategoryTabComponent {
                   .onClick(() => {
 
                     this.commonModule.navigationService.pageInfos.pushPathByName('MainListPage',
-                      new TmpClass(this.commonModule.appService.getAllPotentialSongs(), item.subCategoryName, false))
-
+                      new TmpClass(this.commonModule.appService.getAllSongs(), item.subCategoryName, true))
                   })
               }
               .height('20%')
@@ -96,7 +94,9 @@ export struct CategoryTabComponent {
             .width('65vp')
             .margin('5vp')
 
-          })
+          }, (item: string, index: number) => item)
+
+
         }
       }
       .scrollable(ScrollDirection.Horizontal)

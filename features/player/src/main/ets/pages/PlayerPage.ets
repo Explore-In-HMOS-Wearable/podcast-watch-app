@@ -1,7 +1,7 @@
 import { CommonModule } from 'commons';
 import { AudioStatus } from 'commons/src/main/ets/services/AudioService';
 import { PlayerViewModel } from '../viewmodels/PlayerViewModel';
-import prompt from '@system.prompt';
+import { UIContext } from '@kit.ArkUI';
 
 @Component
 export struct PlayerPage {
@@ -38,7 +38,7 @@ export struct PlayerPage {
       } else {
         clearInterval(this.timer);
         this.isStarted = false;
-        prompt.showToast({ message: 'Read Completed!' });
+        UIContext.prototype.getPromptAction().showToast({ message: 'Read Completed!' });
       }
     }, 300);
   }
@@ -61,12 +61,14 @@ export struct PlayerPage {
   }
 
   private rotatePage() {
-    animateTo({
+
+    this.getUIContext()?.animateTo({
       duration: 500,
       curve: Curve.EaseInOut
     }, () => {
       this.rotateAngle += 180;
-    });
+    })
+
   }
 
   build() {
@@ -82,8 +84,7 @@ export struct PlayerPage {
           .backgroundColor(Color.Green)
           .onClick(() => {
 
-            if(this.playerVm.appService.currentSong.isInList)
-            {
+            if (this.playerVm.appService.currentSong.isInList) {
               this.rotatePage();
             }
 
@@ -97,12 +98,12 @@ export struct PlayerPage {
               Row() {
                 Row() {
                   Image(this.playerVm.appService.currentSong.isFavorite ? this.commonModule.commonMedia.filledFav :
-                  this.commonModule.commonMedia.fav)
+                    this.commonModule.commonMedia.fav)
                     .width(25)
                     .height(25)
                     .fillColor(this.playerVm.appService.currentSong.isFavorite ?
-                    this.commonModule.commonColors.buttonColor :
-                    Color.White)
+                      this.commonModule.commonColors.buttonColor :
+                      Color.White)
                     .onClick(() => {
                       this.playerVm.changeFavStatus(this.playerVm.appService.currentSong);
                     })
@@ -136,11 +137,11 @@ export struct PlayerPage {
 
                 Row() {
                   Image(this.playerVm.appService.currentSong.isDownloaded ? this.commonModule.commonMedia.downloads :
-                  this.commonModule.commonMedia.download)
+                    this.commonModule.commonMedia.download)
                     .width(this.playerVm.appService.currentSong.isDownloaded ? 30 : 25)
                     .height(this.playerVm.appService.currentSong.isDownloaded ? 30 : 25)
                     .fillColor(this.playerVm.appService.currentSong.isDownloaded ?
-                    this.commonModule.commonColors.buttonColor : Color.White)
+                      this.commonModule.commonColors.buttonColor : Color.White)
                     .onClick(() => {
                       this.playerVm.changeDownloadStatus(this.playerVm.appService.currentSong);
                     })
@@ -162,8 +163,8 @@ export struct PlayerPage {
                   Row() {
                     Gauge({ value: this.commonModule.audioService.progress, min: 0, max: 100 }) {
                       Image(this.playerVm.audioService.audioStatus === AudioStatus.Playing ?
-                      this.commonModule.commonMedia.pause :
-                      this.commonModule.commonMedia.start)
+                        this.commonModule.commonMedia.pause :
+                        this.commonModule.commonMedia.start)
                         .width(40)
                         .height(40)
                         .fillColor(Color.White)
@@ -212,10 +213,10 @@ export struct PlayerPage {
             .linearGradient({
               direction: GradientDirection.Bottom,
               colors: [['#801E90FF', 0.0],
-                ['#80666666', 1]]
+                ['#80666666', 1],]
             })
 
-          } else if(this.playerVm.appService.currentSong.isInList){
+          } else if (this.playerVm.appService.currentSong.isInList) {
 
             Column() {
 
@@ -237,14 +238,13 @@ export struct PlayerPage {
                 Flex({ direction: FlexDirection.Row, wrap: FlexWrap.Wrap }) {
                   Text('    ').visibility(Visibility.Hidden)
                   ForEach(this.words, (word: string, idx: number) => {
-                    Text(word + ' ')
+                    Text(word + ` `)
                       .fontSize(12)
                       .padding(3)
                       .borderRadius(5)
                       .id(`word_${idx}`)
 
-                  }, (item: string) => item)
-
+                  }, (item: string, index: number) => item)
 
                 }
                 .margin({
@@ -285,13 +285,11 @@ export struct PlayerPage {
       .gesture(
         PanGesture()
           .onActionStart((event: GestureEvent) => {
-            if (event.offsetX > 1) {
-              this.commonModule.navigationService.pageInfos.pushPath({ name: 'Landing' })
-
-              this.playerVm.audioService.audioStatus = AudioStatus.Paused
-
+            if (event.offsetX < 13) {
               this.playerVm.audioService.stop()
+              this.playerVm.audioService.audioStatus = AudioStatus.Paused
               this.stopReading()
+              this.commonModule.navigationService.pageInfos.pushPath({ name: 'Landing' })
 
               return true
             }
@@ -303,10 +301,9 @@ export struct PlayerPage {
       .linearGradient({
         direction: GradientDirection.Bottom,
         colors: [[this.commonModule.commonColors.baseBackgroundGradientStart, 0.0],
-          [this.commonModule.commonColors.baseBackgroundGradientEnd, 1]]
+          [this.commonModule.commonColors.baseBackgroundGradientEnd, 1],]
       })
       .backgroundColor(Color.Black);
-
 
     }
 

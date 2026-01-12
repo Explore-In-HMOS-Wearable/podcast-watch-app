@@ -1,4 +1,4 @@
-import { ArcList, ArcListItem, ArcListAttribute, ArcListItemAttribute, ComponentContent } from '@kit.ArkUI';
+import { ArcList, ArcListItem,ArcListAttribute,ArcListItemAttribute, ComponentContent } from '@kit.ArkUI';
 import { CommonModule } from 'commons';
 import { SongModel } from 'commons/src/main/ets/models/SongModel';
 import { SearchPageViewModel } from '../viewmodels/SearchPageViewModel';
@@ -70,72 +70,72 @@ export struct SearchPage {
     NavDestination() {
 
       ArcList({
-      initialIndex: 1,
-      header: this.header,
-    }) {
+        initialIndex: 1,
+        header: this.header
+      }) {
 
-      ArcListItem() {
-        Search()
+        ArcListItem() {
+          Search()
+            .width('90%')
+            .textFont({ size: 12 })
+            .margin(0)
+            .onChange((value) => {
+              this.searchPageViewModel.searchOnChange(value);
+            })
+        }.width('90%');
+
+        if (this.searchPageViewModel.appService.searchKey.length > 0) {
+          ForEach(this.searchPageViewModel.appService.filteredSongs,
+            (item: SongModel, index: number) => {
+              this.songListItem(item);
+            }, (item: string, index: number) => item)
+        }
+
+        if (this.searchPageViewModel.appService.searchKey.length > 0) {
+          ArcListItem() {
+            Row() {
+              Image(this.commonModule.commonMedia.reload)
+                .width(35)
+                .height(35)
+                .fillColor(Color.White)
+                .margin({ top: 10 })
+                .onClick(() => {
+                  this.commonModule.appService.reloadOnClick();
+                })
+            }
+            .justifyContent(FlexAlign.Center)
+            .width('90%')
+          }
+        }
+
+
+        if (this.searchPageViewModel.appService.searchKey.length === 0) {
+          ArcListItem() {
+            Row() {
+              Text($r('app.string.label_previous'))
+                .fontSize('18fp')
+                .fontColor($r('app.color.button_color'));
+            }
+            .justifyContent(FlexAlign.Center)
+            .width('90%')
+          }
           .width('90%')
-          .textFont({ size: 12 })
-          .margin(0)
-          .onChange((value) => {
-            this.searchPageViewModel.searchOnChange(value);
-          })
-      }.width('90%');
-
-      if (this.searchPageViewModel.appService.searchKey.length > 0) {
-        ForEach(this.searchPageViewModel.appService.filteredSongs,
-          (item: SongModel, index: number) => {
+          .margin({ top: 10 })
+        }
+        if (this.searchPageViewModel.appService.searchKey.length === 0) {
+          ForEach(this.commonModule.appService.previousSearches, (item: SongModel, index: number) => {
             this.songListItem(item);
-          }, (item: SongModel) => item.songName)
-      }
-
-      if (this.searchPageViewModel.appService.searchKey.length > 0) {
-        ArcListItem() {
-          Row() {
-            Image(this.commonModule.commonMedia.reload)
-              .width(35)
-              .height(35)
-              .fillColor(Color.White)
-              .margin({ top: 10 })
-              .onClick(() => {
-                this.commonModule.appService.reloadOnClick();
-              })
-          }
-          .justifyContent(FlexAlign.Center)
-          .width('90%')
+          }, (item: string, index: number) => item)
         }
-      }
 
-
-      if (this.searchPageViewModel.appService.searchKey.length === 0) {
-        ArcListItem() {
-          Row() {
-            Text($r('app.string.label_previous'))
-              .fontSize('18fp')
-              .fontColor($r('app.color.button_color'));
-          }
-          .justifyContent(FlexAlign.Center)
-          .width('90%')
-        }
-        .width('90%')
-        .margin({ top: 10 })
       }
-      if (this.searchPageViewModel.appService.searchKey.length === 0) {
-        ForEach(this.commonModule.appService.previousSearches, (item: SongModel, index: number) => {
-          this.songListItem(item);
-        }, (item: SongModel) => item.songName)
-      }
-
-    }
-    .width('100%')
-    .height('100%')
-    .linearGradient({
-      direction: GradientDirection.Bottom,
-      colors: [[$r('app.color.base_background_gradient_start'), 0.0],
-        [$r('app.color.base_background_gradient_end'), 1]]
-    })
+      .width('100%')
+      .height('100%')
+      .linearGradient({
+        direction: GradientDirection.Bottom,
+        colors: [[$r('app.color.base_background_gradient_start'), 0.0],
+          [$r('app.color.base_background_gradient_end'), 1],]
+      })
 
     }
 

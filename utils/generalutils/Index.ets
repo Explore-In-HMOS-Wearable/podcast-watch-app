@@ -1,7 +1,5 @@
 export { ObservedArray } from './src/main/ets/utils/ObservedArray';
-
 export { default as Logger } from './src/main/ets/utils/Logger';
-
 export { CommonConstants } from './src/main/ets/common/CommonConstants';
 
 export {

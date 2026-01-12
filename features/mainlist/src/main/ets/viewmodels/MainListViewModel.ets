@@ -6,6 +6,7 @@ export class MainListViewModel extends BaseViewModel {
   canSearch: boolean = true;
 
   songItemOnClick(item: SongModel) {
+
     this.appService.currentSong = item;
 
     if (this.appService.previousSearches.indexOf(item) === -1) {

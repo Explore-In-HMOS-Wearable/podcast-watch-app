@@ -60,7 +60,7 @@ export struct Splash {
               curve: curves.initCurve(),
               iterations: 1,
               duration: 800,
-              playMode: PlayMode.Normal,
+              playMode: PlayMode.Normal
             })
 
           Image($r('app.media.podcasts'))
@@ -70,7 +70,7 @@ export struct Splash {
               curve: curves.initCurve(),
               iterations: 1,
               duration: 700,
-              playMode: PlayMode.Normal,
+              playMode: PlayMode.Normal
             })
 
           Blank().height('10%')

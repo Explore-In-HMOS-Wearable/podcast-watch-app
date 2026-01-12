@@ -1,4 +1,4 @@
-import { ArcList, ArcListItem, ArcListAttribute, ArcListItemAttribute, ComponentContent } from '@kit.ArkUI';
+import { ArcList,ArcListAttribute,ArcListItemAttribute, ArcListItem } from '@kit.ArkUI';
 import { CommonModule } from 'commons';
 import { SongModel } from 'commons/src/main/ets/models/SongModel';
 import { DownloadsViewModel } from '../viewmodels/DownloadsViewModel';
@@ -66,24 +66,24 @@ export struct Downloads {
 
       ArcList() {
 
-      ForEach(this.commonModule.appService.getDownloads(), (item: SongModel, index: number) => {
-        this.songListItem(item);
-      }, (item: SongModel) => item.songName)
+        ForEach(this.commonModule.appService.getDownloads(), (item: SongModel, index: number) => {
+          this.songListItem(item);
+        }, (item: string, index: number) => item)
 
-      ArcListItem() {
-        if (this.commonModule.appService.getDownloads().length === 0) {
-          Row() {
-            Text($r('app.string.label_downloads_empty'))
-              .fontSize('14fp')
-              .fontColor(Color.Gray);
+        ArcListItem() {
+          if (this.commonModule.appService.getDownloads().length === 0) {
+            Row() {
+              Text($r('app.string.label_downloads_empty'))
+                .fontSize('14fp')
+                .fontColor(Color.Gray);
+            }.backgroundColor(Color.Transparent)
           }
         }
-      }
-    }.linearGradient({
-      direction: GradientDirection.Bottom,
-      colors: [[$r('app.color.base_background_gradient_start'), 0.0],
-        [$r('app.color.base_background_gradient_end'), 1]]
-    })
+      }.linearGradient({
+        direction: GradientDirection.Bottom,
+        colors: [[$r('app.color.base_background_gradient_start'), 0.0],
+          [$r('app.color.base_background_gradient_end'), 1],]
+      })
 
     }
 

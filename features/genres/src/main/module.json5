@@ -3,9 +3,7 @@
     "name": "genres",
     "type": "har",
     "deviceTypes": [
-      "default",
-      "tablet",
-      "2in1"
+      "wearable"
     ],
     "routerMap": "$profile:router_map"
   }

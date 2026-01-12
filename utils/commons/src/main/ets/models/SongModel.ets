@@ -1,4 +1,3 @@
-import { CommonModule } from '../components/CommonModule';
 
 @ObservedV2
 export class SongModel {
@@ -22,16 +21,16 @@ export class SongModel {
   }
 
   static empty() {
-    return new SongModel('', '', '', CommonModule.getInstance().commonMedia.background, false, false, false)
+    return new SongModel('', '', '', $r('app.media.background'), false, false, false)
   }
 }
 
 export class TmpClass {
   podcasts: SongModel[] = []
   listName: string = ''
-  isMainList: boolean=true
+  isMainList: boolean = true
 
-  constructor(podcasts: SongModel[], listName: string,isMainList: boolean) {
+  constructor(podcasts: SongModel[], listName: string, isMainList: boolean) {
     this.podcasts = podcasts;
     this.listName = listName;
     this.isMainList = isMainList;

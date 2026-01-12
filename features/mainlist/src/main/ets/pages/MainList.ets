@@ -83,7 +83,7 @@ export struct MainList {
         ForEach(this.podcasts,
           (item: SongModel, index: number) => {
             this.songListItem(item);
-          }, (item: SongModel) => item.songName)
+          }, (item: string, index: number) => item)
 
         ListItem() {
           Text('')
@@ -99,7 +99,7 @@ export struct MainList {
     .linearGradient({
       direction: GradientDirection.Bottom,
       colors: [[$r('app.color.base_background_gradient_start'), 0.0],
-        [$r('app.color.base_background_gradient_end'), 1]]
+        [$r('app.color.base_background_gradient_end'), 1],]
     })
 
     .hideTitleBar(true)

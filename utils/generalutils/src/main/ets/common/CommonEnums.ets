@@ -62,7 +62,7 @@ export enum TemplateEnum {
   LG = 6
 }
 
-export enum EventTypeEnum  {
+export enum EventTypeEnum {
   COLLECTED = 'collected_event',
   LIKED = 'liked_event',
   LEARNING = 'learning_event',

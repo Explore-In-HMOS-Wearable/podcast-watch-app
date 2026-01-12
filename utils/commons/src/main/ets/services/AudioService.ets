@@ -1,24 +1,19 @@
 import { media } from '@kit.MediaKit';
 import { audio } from '@kit.AudioKit';
 import { common } from '@kit.AbilityKit';
-
+import { UIContext } from '@kit.ArkUI';
 
 export
 enum AudioStatus {
   Undefined,
   Playing,
   Paused,
-  Released,
+  Released
 }
 
 @ObservedV2
 export class AudioService {
   static _instance: AudioService;
-  private context?: common.UIAbilityContext;
-  private player?: media.AVPlayer;
-  private progressTimer?: number;
-  @Trace audioStatus: AudioStatus;
-  @Trace progress: number = 0;
 
   // Ensure only one instance of this ViewModel is created
   static getInstance() {
@@ -32,11 +27,11 @@ export class AudioService {
     this.audioStatus = audioStatus;
   }
 
-public init(context: common.UIAbilityContext){
-    this.context = context;
-}
 
-
+  private player: media.AVPlayer | undefined;
+  @Trace audioStatus: AudioStatus;
+  private progressTimer: number | undefined;
+  @Trace progress: number = 0;
 
   private startProgressUpdater() {
     this.clearProgressUpdater(); // Clear any existing timer
@@ -73,7 +68,7 @@ public init(context: common.UIAbilityContext){
         case 'initialized':
           avPlayer.audioRendererInfo = {
             usage: audio.StreamUsage.STREAM_USAGE_MUSIC,
-            rendererFlags: 0,
+            rendererFlags: 0
           };
           avPlayer.prepare();
           break;
@@ -105,20 +100,46 @@ public init(context: common.UIAbilityContext){
   }
 
   public async playEmbeddedMp3(fileName: string) {
-
-    if(!this.context){
-      console.error('AudioService not initialized with context!');
-      return;
-    }
-
-    const resourceFd = await this.context.resourceManager.getRawFd(fileName);
+    this.release();
+    const context = UIContext.prototype.getHostContext() as common.UIAbilityContext;
+    const resourceFd = await context.resourceManager.getRawFd(fileName);
 
     const avFileDescriptor: media.AVFileDescriptor = {
       fd: resourceFd.fd,
       offset: resourceFd.offset,
-      length: resourceFd.length,
+      length: resourceFd.length
     };
+
     this.player = await media.createAVPlayer();
+
+    this.player.on('audioInterrupt', (interruptEvent: audio.InterruptEvent) => {
+      if (interruptEvent.forceType === audio.InterruptForceType.INTERRUPT_FORCE) {
+        switch (interruptEvent.hintType) {
+          case audio.InterruptHint.INTERRUPT_HINT_PAUSE:
+            break;
+          case audio.InterruptHint.INTERRUPT_HINT_STOP:
+            break;
+          case audio.InterruptHint.INTERRUPT_HINT_DUCK:
+            break;
+          case audio.InterruptHint.INTERRUPT_HINT_UNDUCK:
+            break;
+          default:
+            break;
+        }
+      } else if (interruptEvent.forceType === audio.InterruptForceType.INTERRUPT_SHARE) {
+        switch (interruptEvent.hintType) {
+          case audio.InterruptHint.INTERRUPT_HINT_RESUME:
+            break;
+          default:
+            break;
+        }
+      }
+    });
+
+    this.player.on('audioOutputDeviceChangeWithInfo', () => {
+      console.error(`createAVPlayer audioOutputDeviceChangeWithInfo`);
+    });
+
     this.setCallbacks(this.player);
     this.player.fdSrc = avFileDescriptor;
   }
@@ -134,7 +155,7 @@ public init(context: common.UIAbilityContext){
   }
 
   public stop() {
-    this.audioStatus = AudioStatus.Released
+    this.audioStatus = AudioStatus.Paused
     this.player?.stop();
   }
 

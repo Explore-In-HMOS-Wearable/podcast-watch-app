@@ -1,4 +1,4 @@
-import { SubCategory } from './subcategory-model';
+import { SubCategory } from './SubcategoryModel';
 
 export class Category {
   id: number;

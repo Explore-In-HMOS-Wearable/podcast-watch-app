@@ -1,4 +1,4 @@
-import { ArcList, ArcListItem, ArcListAttribute, ArcListItemAttribute, ComponentContent } from '@kit.ArkUI';
+import { ArcList, ArcListItem,ArcListAttribute,ArcListItemAttribute, ComponentContent } from '@kit.ArkUI';
 import { SettingsMenuModel } from 'commons/src/main/ets/models/SettingsMenuModel';
 import { CommonModule } from 'commons';
 
@@ -42,7 +42,6 @@ class MenuDataSource implements IDataSource {
 @Component
 export struct Settings {
   pageInfos: NavPathStack = new NavPathStack();
-
   context: UIContext = this.getUIContext();
   header: ComponentContent<Object> = new ComponentContent(this.context, wrapBuilder(buildText));
   //Would like to add volume.
@@ -86,7 +85,7 @@ export struct Settings {
     new SettingsMenuModel('Delete All Downloads', '', () => {
       // Clear downloads
     }),
-    new SettingsMenuModel('App Version', '0.0.12.1', () => {
+    new SettingsMenuModel('App Version', 'x.y.zz.t1', () => {
       // Version info
     }),
     new SettingsMenuModel('Sign Out', '', () => {
@@ -98,7 +97,6 @@ export struct Settings {
   ]
   commonModule: CommonModule = CommonModule.getInstance();
   private menuDataSource: MenuDataSource = new MenuDataSource(this.menuList);
-
 
   @Builder
   menuItem(model: SettingsMenuModel) {
@@ -115,7 +113,7 @@ export struct Settings {
       .padding({ left: 12, bottom: 12, top: 12 })
       .backgroundColor(this.commonModule.commonColors.menuItemBackground)
       .width('90%')
-      .height('90px')
+      .height('110vp')
       .borderRadius(48)
       .justifyContent(FlexAlign.Start)
     }
@@ -128,24 +126,24 @@ export struct Settings {
     NavDestination() {
 
       ArcList({
-      initialIndex: 1,
-      header: this.header
-    }) {
-      LazyForEach(this.menuDataSource, (item: SettingsMenuModel, index: number) => {
-        this.menuItem(item);
+        initialIndex: 1,
+        header: this.header
+      }) {
+        LazyForEach(this.menuDataSource, (item: SettingsMenuModel, index: number) => {
+          this.menuItem(item);
+        })
+      }
+      .scrollBar(BarState.Off)
+      .focusable(true)
+      .focusOnTouch(true)
+      .defaultFocus(true)
+      .height('100%')
+      .width('100%')
+      .linearGradient({
+        direction: GradientDirection.Bottom,
+        colors: [[this.commonModule.commonColors.baseBackgroundGradientStart, 0.0],
+          [this.commonModule.commonColors.baseBackgroundGradientEnd, 1]]
       })
-    }
-    .scrollBar(BarState.Off)
-    .focusable(true)
-    .focusOnTouch(true)
-    .defaultFocus(true)
-    .height('100%')
-    .width('100%')
-    .linearGradient({
-      direction: GradientDirection.Bottom,
-      colors: [[this.commonModule.commonColors.baseBackgroundGradientStart, 0.0],
-        [this.commonModule.commonColors.baseBackgroundGradientEnd, 1]]
-    })
 
     }
 

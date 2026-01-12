@@ -1,5 +1,5 @@
 import { IndexViewModel } from './LandingViewModel';
-import { ArcList, ArcListItem, ComponentContent, ArcListAttribute, ArcListItemAttribute } from '@kit.ArkUI';
+import { ArcList,ArcListAttribute,ArcListItemAttribute, ArcListItem, ComponentContent } from '@kit.ArkUI';
 import { CommonModule } from 'commons';
 import { SongModel } from 'commons/src/main/ets/models/SongModel';
 
@@ -9,7 +9,7 @@ function buildText() {
     Text('Podcast')
       .fontSize('23fp')
       .fontColor(Color.White);
-    Text('7.0.13.1')
+    Text('x.y.zz.t1')
       .fontSize('10fp')
       .fontColor(Color.White)
   }
@@ -27,6 +27,7 @@ export class TmpClass {
   }
 }
 
+@Entry
 @Component
 export struct Landing {
   pageInfos: NavPathStack = new NavPathStack();
@@ -45,10 +46,8 @@ export struct Landing {
 
       ArcList({
         initialIndex: 0,
-        header: this.header,
-
+        header: this.header
       }) {
-
 
         //MainList
         ArcListItem() {
@@ -60,7 +59,7 @@ export struct Landing {
           .padding({ left: 12, bottom: 12, top: 12 })
           .backgroundColor($r('app.color.menu_item_background'))
           .width('90%')
-          .height('90px')
+          .height('45vp')
           .borderRadius(48)
           .justifyContent(FlexAlign.Start)
           .onClick(() => {
@@ -115,10 +114,10 @@ export struct Landing {
             })
             .backgroundColor($r('app.color.menu_item_background'))
             .width('90%')
-            .height('90px')
+            .height('60vp')
             .borderRadius(48)
             .justifyContent(FlexAlign.SpaceBetween)
-          }
+          }.backgroundColor(Color.Transparent)
         }
         .width('90%')
         .margin({ bottom: 0 });
@@ -145,7 +144,7 @@ export struct Landing {
           .padding({ left: 12, bottom: 12, top: 12 })
           .backgroundColor($r('app.color.menu_item_background'))
           .width('90%')
-          .height('90px')
+          .height('45vp')
           .borderRadius(48)
           .justifyContent(FlexAlign.Start)
           .onClick(() => {
@@ -166,7 +165,7 @@ export struct Landing {
           .padding({ left: 12, bottom: 12, top: 12 })
           .backgroundColor($r('app.color.menu_item_background'))
           .width('90%')
-          .height('90px')
+          .height('45vp')
           .borderRadius(48)
           .justifyContent(FlexAlign.Start)
           .onClick(() => {
@@ -186,7 +185,7 @@ export struct Landing {
           .padding({ left: 12, bottom: 12, top: 12 })
           .backgroundColor($r('app.color.menu_item_background'))
           .width('90%')
-          .height('90px')
+          .height('45vp')
           .borderRadius(48)
           .justifyContent(FlexAlign.Start)
           .onClick(() => {
@@ -208,18 +207,18 @@ export struct Landing {
               this.indexVm.offLineModeChange(value);
             })
               .margin(0)
-              .width('80px')
+              .width('80vp')
               .scale({ x: 0.9, y: 0.9 })
           }
           .padding({
             left: 12,
             bottom: 12,
             top: 12,
-            right: 12,
+            right: 12
           })
           .backgroundColor($r('app.color.menu_item_background'))
           .width('90%')
-          .height('90px')
+          .height('45vp')
           .borderRadius(48)
           .justifyContent(FlexAlign.SpaceBetween)
         }
@@ -236,7 +235,7 @@ export struct Landing {
           .padding({ left: 12, bottom: 12, top: 12 })
           .backgroundColor($r('app.color.menu_item_background'))
           .width('90%')
-          .height('90px')
+          .height('45vp')
           .borderRadius(48)
           .justifyContent(FlexAlign.Start)
         }
@@ -256,7 +255,7 @@ export struct Landing {
           .padding({ left: 12, bottom: 12, top: 12 })
           .backgroundColor($r('app.color.menu_item_background'))
           .width('90%')
-          .height('90px')
+          .height('45vp')
           .borderRadius(48)
           .justifyContent(FlexAlign.Start)
         }
@@ -277,7 +276,7 @@ export struct Landing {
       .linearGradient({
         direction: GradientDirection.Bottom,
         colors: [[$r('app.color.base_background_gradient_start'), 0.0],
-          [$r('app.color.base_background_gradient_end'), 1]]
+          [$r('app.color.base_background_gradient_end'), 1],]
       })
       .gesture(
         PanGesture()

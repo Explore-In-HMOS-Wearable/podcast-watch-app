@@ -26,7 +26,7 @@ export class AppService {
   @Trace text: string =
     'Hello everyone, it\'s Jude here and you\'re welcome to SmartWatchSeries. So following' +
       ' the last update a month ago, the Huawei Watch D2 is now receiving a new software update.' +
-      ' This software update has a firmware version number of 5.1.0.18 and it upgrades the operating' +
+      ' This software update has a firmware version number of x.y.z.t1 and it upgrades the operating' +
       ' system from Harmony OS 5.0 to Harmony OS 5.1. It also brings new features to the Watch D2.' +
       ' This firmware update has a file size of 92.99MB, so downloading it will be quick.Looking at' +
       ' the changelog, the first addition says, adds the new hex grid layout. With a swipe from the' +

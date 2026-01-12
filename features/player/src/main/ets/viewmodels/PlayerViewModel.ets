@@ -1,4 +1,4 @@
-import { BaseViewModel, CommonModule } from 'commons'
+import { BaseViewModel, CommonModule } from 'commons';
 import { SongModel } from 'commons/src/main/ets/models/SongModel';
 import { AppService } from 'commons/src/main/ets/services/AppService';
 
@@ -15,6 +15,9 @@ export class PlayerViewModel extends BaseViewModel {
     await this.audioService.playEmbeddedMp3(songModel.songPath);
   }
 
+  stopAudio() {
+    this.audioService.stop();
+  }
 
   pauseAudio() {
     this.audioService.pause();

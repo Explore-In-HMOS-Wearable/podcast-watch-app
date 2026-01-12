@@ -68,7 +68,7 @@ export struct Favorites {
 
       ForEach(this.commonModule.appService.getFavorites(), (item: SongModel, index: number) => {
         this.songListItem(item);
-      }, (item: SongModel) => item.songName)
+      }, (item: string, index: number) => item)
 
       ArcListItem() {
         if (this.commonModule.appService.getFavorites().length === 0) {
@@ -76,13 +76,13 @@ export struct Favorites {
             Text($r('app.string.label_favorites_empty'))
               .fontSize('14fp')
               .fontColor(Color.Gray);
-          }
+          }.backgroundColor(Color.Transparent)
         }
       }
     }.linearGradient({
       direction: GradientDirection.Bottom,
       colors: [[$r('app.color.base_background_gradient_start'), 0.0],
-        [$r('app.color.base_background_gradient_end'), 1]]
+        [$r('app.color.base_background_gradient_end'), 1],]
     })
 
     }
